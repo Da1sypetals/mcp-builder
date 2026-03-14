@@ -28,6 +28,8 @@ Balance comprehensive API endpoint coverage with specialized workflow tools. Wor
 **Tool Naming and Discoverability:**
 Clear, descriptive tool names help agents find the right tools quickly. Use consistent prefixes (e.g., `github_create_issue`, `github_list_repos`) and action-oriented naming.
 
+Tool name must NOT be longer than 32 characters. This is a restriction on our LLM APIs, where name longer than 32 characters ALWAYS cause MCP calls to fail. So you MUST obey this rule. AGAIN: Tool name must NOT be longer than 32 characters.
+
 **Context Management:**
 Agents benefit from concise tool descriptions and the ability to filter/paginate results. Design tools that return focused, relevant data. Some clients support code execution which can help agents filter and process data efficiently.
 
