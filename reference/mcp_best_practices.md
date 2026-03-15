@@ -53,6 +53,7 @@ The name should be general, descriptive of the service being integrated, easy to
 
 - Tool descriptions must narrowly and unambiguously describe functionality
 - Descriptions must precisely match actual functionality
+- Descriptions should describe **what the tool does and when to use it** — NOT how it works internally
 - Provide tool annotations (readOnlyHint, destructiveHint, idempotentHint, openWorldHint)
 - Keep tool operations focused and atomic
 
